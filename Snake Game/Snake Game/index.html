@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="game-container">
+        <div class="score-board">
+            <div id="scoreBox">Score: 0</div>
+            <div id="hiscoreBox">HiScore: 0</div>
+        </div>
+
+        <div id="board"></div>
+
+        <div class="controls">
+            <button class="ctrl-btn up-btn" onclick="handleMobileInput('ArrowUp')">▲</button>
+            <div class="horizontal-ctrls">
+                <button class="ctrl-btn left-btn" onclick="handleMobileInput('ArrowLeft')">◀</button>
+                <button class="ctrl-btn right-btn" onclick="handleMobileInput('ArrowRight')">▶</button>
+            </div>
+            <button class="ctrl-btn down-btn" onclick="handleMobileInput('ArrowDown')">▼</button>
+        </div>
+
+        <p class="start-msg">Press Arrow Keys to Start</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
